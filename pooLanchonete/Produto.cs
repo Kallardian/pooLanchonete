@@ -14,12 +14,15 @@ namespace pooLanchonete
 
         public DateTime Validade { get; set; }
 
+        public int? Quantidade { get; set; }
 
-        public Produto(decimal peso, decimal preco)
+
+        public Produto(decimal peso, decimal preco, int? quantidade)
         {
             this.Validade = DateTime.Now.AddDays(7);
             this.Peso = peso;
             this.Preco = preco;
+            this.Quantidade = quantidade;
         }
     }
 }

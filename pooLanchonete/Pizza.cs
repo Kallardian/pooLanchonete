@@ -12,7 +12,7 @@ namespace pooLanchonete
         public bool BordaRecheada { get; set; }
         public string Molho { get; set; }
 
-        public Pizza(decimal peso, decimal preco, string recheio, bool bordaRecheada, string molho) : base(peso, preco)
+        public Pizza(string recheio, bool bordaRecheada, string molho, int quantidade) : base(500, (decimal)25.00, quantidade)
         {
             this.Recheio = recheio;
             this.BordaRecheada = bordaRecheada;

@@ -13,7 +13,7 @@ namespace pooLanchonete
         public string Massa { get; set; }
 
 
-        public Salgadinho(decimal peso, decimal preco, string tipoSalgado, string recheio, string massa) : base(peso, preco)
+        public Salgadinho(string tipoSalgado, string recheio, string massa, int quantidade) : base(1000, (decimal)5.00, quantidade)
         {
             this.TipoSalgado = tipoSalgado;
             this.Recheio = recheio;

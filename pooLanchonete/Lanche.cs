@@ -12,7 +12,7 @@ namespace pooLanchonete
         public string Recheio { get; set; }
         public string Molho { get; set; }
 
-        public Lanche(decimal peso, decimal preco, string tipoPao, string recheio, string molho) : base(peso, preco)
+        public Lanche(string tipoPao, string recheio, string molho, int quantidade) : base(350, (decimal)18.99, quantidade)
         {
             this.TipoPao = tipoPao;
             this.Recheio = recheio;

@@ -14,6 +14,7 @@ namespace pooLanchonete
 
         public Prato(List<Lanche> lanches, List<Salgadinho> salgadinhos, List<Pizza> pizzas)
         {
+
             this.Lanches = lanches;
             this.Salgadinhos = salgadinhos;
             this.Pizzas = pizzas;
